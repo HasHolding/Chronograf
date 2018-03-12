@@ -3,7 +3,7 @@ FROM hasholding/alpine-base
 LABEL maintainer "Levent SAGIROGLU <LSagiroglu@gmail.com>"
 
 ARG VERSION=1.4.2.3
-ENV BOLT_PATH /etc/chronograf-v1-.db
+ENV BOLT_PATH /shared/chronograf-v1-.db
 VOLUME /shared
 WORKDIR /tmp
 RUN apk add --no-cache wget 
